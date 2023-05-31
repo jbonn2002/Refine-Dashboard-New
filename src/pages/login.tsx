@@ -11,8 +11,8 @@ import { yariga } from "../components/index";
 export const Login: React.FC = () => {
   const { mutate: login } = useLogin<CredentialResponse>();
 
-  const REACT_APP_GOOGLE_CLIENT_ID =
-    "714475038430-ru1rbapvgh2c1n6fg0uu1jjt5dgvcddu.apps.googleusercontent.com";
+  const GOOGLE_CLIENT_ID =
+    "1041339102270-e1fpe2b6v6u1didfndh7jkjmpcashs4f.apps.googleusercontent.com";
 
   const GoogleButton = (): JSX.Element => {
     const divRef = useRef<HTMLDivElement>(null);
@@ -25,7 +25,7 @@ export const Login: React.FC = () => {
       try {
         window.google.accounts.id.initialize({
           ux_mode: "popup",
-          client_id: REACT_APP_GOOGLE_CLIENT_ID,
+          client_id: GOOGLE_CLIENT_ID,
           callback: async (res: CredentialResponse) => {
             if (res.credential) {
               login(res);
