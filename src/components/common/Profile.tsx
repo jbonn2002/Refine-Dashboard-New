@@ -1,7 +1,7 @@
 import { Email, Phone, Place } from "@mui/icons-material";
 import { Box, Stack, Typography } from "@mui/material";
 
-import { ProfileProps, PropertyProps } from "interfaces/common";
+import { ProfileProps, PropertyProps } from "../../interfaces/common";
 import PropertyCard from "./PropertyCard";
 
 function checkImage(url: any) {

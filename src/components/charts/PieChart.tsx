@@ -1,7 +1,7 @@
 import ReactApexChart from "react-apexcharts";
 
 import { Box, Typography, Stack } from "@mui/material";
-import { PieChartProps } from "interfaces/home";
+import { PieChartProps } from "../../interfaces/home";
 
 const PieChart = ({ title, value, series, colors }: PieChartProps) => {
   return (

@@ -11,7 +11,7 @@ import {
   Button,
 } from "@mui/material";
 
-import { FormProps } from "interfaces/common";
+import { FormProps } from "../../interfaces/common";
 import CustomButton from "./CustomButton";
 
 const Form = ({
